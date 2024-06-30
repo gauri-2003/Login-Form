@@ -55,8 +55,8 @@ function Signup() {
             <div className="login-input">
               <i className="fa fa-calendar"></i>
               <input
-                type="date"
-                placeholder="DOB"
+                type="text"
+                placeholder="DOB (dd / mm / yy)"
                 onChange={(e) => setDob(e.target.value)}
               />
             </div>
