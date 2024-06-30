@@ -1,8 +1,7 @@
 import React from "react";
 import {useState} from "react";
-import "./App.css";
 import Signup from "./Signup";
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import Login from "./login";
 import Home from "./Home";
 
@@ -13,6 +12,7 @@ function App() {
         <Route path='/register' element={<Signup/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/home' element={<Home/>}></Route>
+        <Route path="/" element={<Navigate to="/login" />} />
       </Routes>
     </BrowserRouter>
   );
